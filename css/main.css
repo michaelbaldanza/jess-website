@@ -66,7 +66,8 @@ a:hover {
 
 img {
   z-index: 10;
-  padding: 110px 0px 0px 20px;
+  padding: 110px 0 0 3.5em;
+
 }
 
 @media (max-width: 760px) {
