@@ -22,10 +22,11 @@ li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
-
-#columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 575px) {
+  #columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 a {
@@ -63,7 +64,13 @@ a:hover {
   bottom: 0;
 }
 
-#image {
+img {
   z-index: 10;
   padding: 110px 0px 0px 20px;
+}
+
+@media (max-width: 760px) {
+  img {
+    display: none;
+  }
 }
