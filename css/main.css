@@ -70,16 +70,35 @@ a:hover {
   bottom: 0;
 }
 
+
 img {
   z-index: 10;
-  transform: translate(120px, 10em);
+  /* padding: 10em 0 0 6em; */
+  transform: translate(6em, 10em);
 }
+
 
 @media (max-width: 760px) {
   img {
     display: none;
   }
 }
+
+@media (max-width: 1000px) {
+  img {
+    z-index: 10;
+    /* padding: 10em 0 0 6em; */
+    transform: translate(3em, 10em);
+  }
+}
+
+@media (min-width: 1300px) {
+  img {
+    z-index: 10;
+    transform: translate(11em, 10em);
+  }
+}
+
 @media (min-width: 1401px) {
   .hidden {
     display: none !important;
